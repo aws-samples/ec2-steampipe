@@ -25,7 +25,7 @@ Steampipe [binary](https://steampipe.io/downloads) and [AWS plugin](https://hub.
 
 
 ## Using Steampipe
-Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From terminal session, you can query [steampipe](https://steampipe.io/docs/query/overview). Refer to [documentation site](https://hub.steampipe.io/plugins/turbot/aws#get-started) for advanced configuration options (such as multi-region and multi-account connections) and [table definitions & examples](https://hub.steampipe.io/plugins/turbot/aws/tables)
+Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment. Refer to [documentation site](https://hub.steampipe.io/plugins/turbot/aws) for advanced configuration options (such as multi-region and multi-account connections) and [table definitions & examples](https://hub.steampipe.io/plugins/turbot/aws/tables). 
 
 To perform [compliance auditing](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/) or run [dashboards](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/), refer to [Steampipe mods site](https://hub.steampipe.io/mods?q=AWS) for installation and other instructions.
 
