@@ -9,7 +9,7 @@ The tool is mentioned on [AWS Open Source blog](https://aws.amazon.com/blogs/ope
 Installing and configuring steampipe requires effort and may raise security concerns as users must have [ReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html) IAM permission and Windows users must install Windows Subsystem for Linux (WSL 2.0).  
 
 
-This repo provides a CloudFormation template that provisions an EC2 instance with Steampipe and AWS plugin installed and configured for immediate use. 
+This repo provides a CloudFormation template that provisions a EC2 instance running [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/) with Steampipe and AWS plugin installed and configured for immediate use. 
 
 
 
