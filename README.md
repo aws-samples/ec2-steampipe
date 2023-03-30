@@ -32,7 +32,7 @@ Steampipe is installed with AWS plugin configured for the region where CloudForm
 
 Refer to [AWS plugin site](https://hub.steampipe.io/plugins/turbot/aws) for [table definitions and examples](https://hub.steampipe.io/plugins/turbot/aws/tables) and advanced configuration options such as [multi-region](https://hub.steampipe.io/plugins/turbot/aws#multi-region-connections) and [multi-account](https://hub.steampipe.io/plugins/turbot/aws#multi-account-connections) connections.
 
-To perform [compliance auditing](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/) and run [dashboards](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/), refer to [Steampipe Hub mods site](https://hub.steampipe.io/mods?q=AWS) for installation and usage instructions.
+Refer to [Steampipe Hub mods site](https://hub.steampipe.io/mods?q=AWS) for mods that can perform [compliance auditing](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/) and run [dashboards](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/) among other things. 
 
 
 ## Updating steampipe
@@ -40,7 +40,7 @@ To update steampipe and associated plugins, login to EC2 instance and run `/home
 
 
 ## About remote web console
-Remote web access is provided by [NICE DCV](https://aws.amazon.com/hpc/dcv/) server, and supports [file transfer](https://docs.aws.amazon.com/dcv/latest/userguide/using-transfer-web.html). Usage indicates acceptance of [NICE DCV EULA](https://www.nice-dcv.com/eula.html).
+Remote web access is provided by [NICE DCV](https://aws.amazon.com/hpc/dcv/) server and supports [file transfer](https://docs.aws.amazon.com/dcv/latest/userguide/using-transfer-web.html). Usage indicates acceptance of [NICE DCV EULA](https://www.nice-dcv.com/eula.html).
 
 ![file transfer](https://docs.aws.amazon.com/images/dcv/latest/userguide/images/web-storage.png)
 
