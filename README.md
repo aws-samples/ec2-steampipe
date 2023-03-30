@@ -16,7 +16,7 @@ This repo provides a CloudFormation template that provisions a EC2 instance runn
 ## Getting started
 Download the [CloudFormation template](ec2-steampipe.yaml) and provision it in your AWS [CloudFormation console](https://console.aws.amazon.com/cloudformation). 
 Once provisioned, go to Outputs section.
-
+![CloudFormation Outputs section](images/outputs.png)
 
 Open the `SSMSessionManager` link value (in the form `https://<REGION>.console.aws.amazon.com/systems-manager/session-manager/<InstanceID>`) in a new browser tab to open SSM Session Manager session. Use the command `sudo passwd ec2-user` to set login password. 
 
@@ -31,7 +31,7 @@ Steampipe [binary](https://steampipe.io/downloads) and [AWS plugin](https://hub.
 ## Using Steampipe
 Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From a terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment.
 
-![using stampipe](images/ec2-steampipe.png)
+![using steampipe](images/ec2-steampipe.png)
 
 Refer to [AWS plugin site](https://hub.steampipe.io/plugins/turbot/aws) for [table definitions and examples](https://hub.steampipe.io/plugins/turbot/aws/tables) and advanced configuration options (such as [multi-region](https://hub.steampipe.io/plugins/turbot/aws#multi-region-connections) and [multi-account](https://hub.steampipe.io/plugins/turbot/aws#multi-account-connections) connections).
 
