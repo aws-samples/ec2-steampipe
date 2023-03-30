@@ -18,7 +18,10 @@ Download the [CloudFormation template](ec2-steampipe.yaml) and provision it in y
 Once provisioned, go to Outputs section.
 
 
-Use the `SSMSessionManager` link value to change ec2-user password and `RemoteWebConsole` link value to login into graphical desktop in your browser. 
+Open the `SSMSessionManager` link value (in the form `https://<REGION>.console.aws.amazon.com/systems-manager/session-manager/<InstanceID>`) in a new browser tab to open SSM Session Manager session to set ec2-user login password. 
+
+Open the `WebConsole` link value (in the form `https://<EC2 Public IP>:8443/`) to access web browser console and login as user ec2-user with the password that you have set. 
+ 
 
 
 ## Attribution
