@@ -33,9 +33,9 @@ Steampipe is installed with AWS plugin configured for the region where CloudForm
 
 ![using stampipe](images/ec2-steampipe.png)
 
-Refer to [documentation site](https://hub.steampipe.io/plugins/turbot/aws) for advanced configuration options (such as multi-region and multi-account connections) and [table definitions & examples](https://hub.steampipe.io/plugins/turbot/aws/tables). 
+Refer to [AWS plugin site](https://hub.steampipe.io/plugins/turbot/aws) for [table definitions and examples](https://hub.steampipe.io/plugins/turbot/aws/tables) and advanced configuration options (such as [multi-region](https://hub.steampipe.io/plugins/turbot/aws#multi-region-connections) and [multi-account](https://hub.steampipe.io/plugins/turbot/aws#multi-account-connections) connections),
 
-To perform [compliance auditing](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/) or run [dashboards](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/), refer to [Steampipe mods site](https://hub.steampipe.io/mods?q=AWS) for installation and usage instructions.
+To perform [compliance auditing](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/) or run [dashboards](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/), refer to [Steampipe Hub mods site](https://hub.steampipe.io/mods?q=AWS) for installation and usage instructions.
 
 ## Updating steampipe
 To update steampipe and associated plugins, login to EC2 instance and run `/home/ec2-user/update-steampipe` script. 
