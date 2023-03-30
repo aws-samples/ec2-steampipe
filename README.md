@@ -18,7 +18,7 @@ Download the [CloudFormation template](ec2-steampipe.yaml) and provision it in y
 Once provisioned, go to Outputs section.
 
 
-Use the `SSMSessionManager` link value to change ec2-user password and `RemoteWebConsole` link value to login to graphical desktop in your browser. 
+Use the `SSMSessionManager` link value to change ec2-user password and `RemoteWebConsole` link value to login into graphical desktop in your browser. 
 
 ## Attribution
 Steampipe [binary](https://steampipe.io/downloads) and [AWS plugin](https://hub.steampipe.io/plugins/turbot/aws) are downloaded without modification. Usage indicates acceptance of their licenses.
