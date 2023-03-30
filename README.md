@@ -1,5 +1,5 @@
 # EC2 Steampipe
-[Steampipe](https://steampipe.io/) is an open source tool for querying cloud APIs in SQL. The AWS plugin maps the suite of AWS APIs to over 250 SQL tables that users can query separately or in combination, to answer questions about their AWS environment compute, networking, and storage resources, check security posture, explore billing, and more.
+[Steampipe](https://steampipe.io/) is an open source tool for querying cloud APIs using SQL. The AWS plugin maps the suite of AWS APIs to over 250 SQL tables that users can query separately or in combination, to answer questions about their AWS environment compute, networking, and storage resources, check security posture, explore billing, and more.
 
 The tool is mentioned on [AWS Open Source blog](https://aws.amazon.com/blogs/opensource/)
 - [Querying AWS at scale across APIs, Regions, and accounts](https://aws.amazon.com/blogs/opensource/querying-aws-at-scale-across-apis-regions-and-accounts/)
