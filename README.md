@@ -25,13 +25,15 @@ Open the `WebConsole` link value (in the form `https://<EC2 Public IP>:8443/`) t
 
 
 ## Attribution
-Steampipe [binary](https://steampipe.io/downloads) and [AWS plugin](https://hub.steampipe.io/plugins/turbot/aws) are downloaded without modification. Usage indicates acceptance of their licenses.
+Steampipe [binary](https://steampipe.io/downloads), [AWS plugin](https://hub.steampipe.io/plugins/turbot/aws) and other binaries in the EC2 instance are downloaded without modification. Usage indicates acceptance of their licenses.
 
 
 ## Using Steampipe
-Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From a terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment.
+Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From a terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment. 
+You can run Steampipe in [service mode](https://steampipe.io/docs/managing/service) and use a Postgres-compatible database client such as [Sqlectron](https://sqlectron.github.io/) to issue queries.
 
 ![using steampipe](images/ec2-steampipe.png)
+
 
 Refer to [AWS plugin site](https://hub.steampipe.io/plugins/turbot/aws) for [table definitions and examples](https://hub.steampipe.io/plugins/turbot/aws/tables) and advanced configuration options (such as [multi-region](https://hub.steampipe.io/plugins/turbot/aws#multi-region-connections) and [multi-account](https://hub.steampipe.io/plugins/turbot/aws#multi-account-connections) connections).
 
