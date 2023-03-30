@@ -72,7 +72,7 @@ Parameters:
     Default: 9
   amazonLinux2amd64:
     Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
-    Description: Amazon Linux 2 AMI (x86_64). ( aws ssm get-parameters-by-path --path /aws/service/ami-amazon-linux-latest --query "Parameters[].Name" )
+    Description: Amazon Linux 2 AMI (x86_64) ( aws ssm get-parameters-by-path --path /aws/service/ami-amazon-linux-latest --query "Parameters[].Name" )
     Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
 
 Resources:
@@ -117,8 +117,8 @@ Resources:
         - Key: Name
           Value: !Sub "[${AWS::StackName}] - ${ec2Name}"
         - Key: GitHub
-          Value: https://github.com/aws-samples/amazon-ec2-nice-dcv-samples
-
+          Value: https://github.com/aws-samples/ec2-steampipe
+          
   instanceIamRole:
     Type: AWS::IAM::Role
     Properties: 
@@ -147,7 +147,7 @@ Resources:
         - Key: StackId
           Value: !Sub ${AWS::StackId}
         - Key: GitHub
-          Value: https://github.com/aws-samples/amazon-ec2-nice-dcv-samples
+          Value: https://github.com/aws-samples/ec2-steampipe
 
   instanceProfile:
     Type: AWS::IAM::InstanceProfile
@@ -337,7 +337,7 @@ Resources:
         - Key: StackId
           Value: !Sub ${AWS::StackId}
         - Key: GitHub
-          Value: https://github.com/aws-samples/amazon-ec2-nice-dcv-samples
+          Value: https://github.com/aws-samples/ec2-steampipe
         
 Outputs:
   EC2Instance:
