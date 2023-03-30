@@ -20,12 +20,17 @@ Once provisioned, go to Outputs section.
 
 Use the `SSMSessionManager` link value to change ec2-user password and `RemoteWebConsole` link value to login into graphical desktop in your browser. 
 
+
 ## Attribution
 Steampipe [binary](https://steampipe.io/downloads) and [AWS plugin](https://hub.steampipe.io/plugins/turbot/aws) are downloaded without modification. Usage indicates acceptance of their licenses.
 
 
 ## Using Steampipe
-Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment. Refer to [documentation site](https://hub.steampipe.io/plugins/turbot/aws) for advanced configuration options (such as multi-region and multi-account connections) and [table definitions & examples](https://hub.steampipe.io/plugins/turbot/aws/tables). 
+Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From a terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment.
+
+![using stampipe](images/ec2-steampipe.png)
+
+Refer to [documentation site](https://hub.steampipe.io/plugins/turbot/aws) for advanced configuration options (such as multi-region and multi-account connections) and [table definitions & examples](https://hub.steampipe.io/plugins/turbot/aws/tables). 
 
 To perform [compliance auditing](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/) or run [dashboards](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/), refer to [Steampipe mods site](https://hub.steampipe.io/mods?q=AWS) for installation and usage instructions.
 
