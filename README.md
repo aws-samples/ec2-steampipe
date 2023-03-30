@@ -1,5 +1,5 @@
 # EC2 Steampipe
-[Steampipe](https://steampipe.io/) is an open source tool for querying cloud APIs using SQL. The AWS plugin maps AWS APIs to over 250 SQL tables that users can query separately or in combination to answer questions about their AWS environment compute, networking, and storage resources, check security posture, explore billing, and more.
+[Steampipe](https://steampipe.io/) is an open source tool for querying cloud APIs using SQL. The AWS plugin maps AWS APIs to over 250 SQL tables that you can query separately or in combination to answer questions about your AWS environment compute, networking, and storage resources, check security posture, explore billing, and more.
 
 The tool is mentioned on [AWS Open Source blog](https://aws.amazon.com/blogs/opensource/)
 - [Querying AWS at scale across APIs, Regions, and accounts](https://aws.amazon.com/blogs/opensource/querying-aws-at-scale-across-apis-regions-and-accounts/)
@@ -22,17 +22,17 @@ Open the `WebConsole` link value (in the form `https://<EC2 Public IP>:8443/`) t
  
 
 ## Attribution
-Steampipe [binary](https://steampipe.io/downloads), [AWS plugin](https://hub.steampipe.io/plugins/turbot/aws) and other binaries in the EC2 instance are downloaded without modification. Usage indicates acceptance of their licenses.
+[Steampipe](https://steampipe.io/downloads), [AWS plugin](https://hub.steampipe.io/plugins/turbot/aws) and other binaries in the EC2 instance are downloaded without modification. Usage indicates acceptance of their licenses.
 
 
 ## Using Steampipe
-Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From a terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment. You can run Steampipe in [service mode](https://steampipe.io/docs/managing/service) and use a Postgres-compatible database client such as [Sqlectron-gui](https://github.com/sqlectron/sqlectron-gui)) to issue queries.
+Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From a terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment. You can run Steampipe in [service mode](https://steampipe.io/docs/managing/service) and connect to it using a Postgres-compatible database client such as [Sqlectron-gui](https://github.com/sqlectron/sqlectron-gui).
 
 ![using steampipe](images/ec2-steampipe.png)
 
 Refer to [AWS plugin site](https://hub.steampipe.io/plugins/turbot/aws) for [table definitions and examples](https://hub.steampipe.io/plugins/turbot/aws/tables) and advanced configuration options such as [multi-region](https://hub.steampipe.io/plugins/turbot/aws#multi-region-connections) and [multi-account](https://hub.steampipe.io/plugins/turbot/aws#multi-account-connections) connections.
 
-Refer to [Steampipe Hub mods site](https://hub.steampipe.io/mods?q=AWS) for mods that can perform [compliance auditing](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/) and run [dashboards](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/) among other things. 
+Refer to [Steampipe Hub mods site](https://hub.steampipe.io/mods?q=AWS) for mods that can perform [compliance auditing](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/) and run [dashboards](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/) among other functions. 
 
 
 ## Updating steampipe
