@@ -22,11 +22,11 @@ Open the `WebConsole` link value to access web browser console and login as user
  
 
 ## Attribution
-[Steampipe](https://steampipe.io/downloads), AWS plugin and other binaries in the EC2 instance are downloaded without modification. Usage indicates acceptance of their licenses.
+[Steampipe](https://github.com/turbot/steampipe), [AWS plugin](https://github.com/turbot/steampipe-plugin-aws), [Sqlectron GUI](https://github.com/sqlectron/sqlectron-gui), [Visual Studio Code](https://github.com/microsoft/vscode) and other binaries in the EC2 instance are downloaded without modification. Usage indicates acceptance of their licenses.
 
 
 ## Using Steampipe
-Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From a terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment. You can run Steampipe in [service mode](https://steampipe.io/docs/managing/service) and connect to it using a Postgres-compatible database client such as [Sqlectron-gui](https://github.com/sqlectron/sqlectron-gui).
+Steampipe is installed with AWS plugin configured for the region where CloudFormation template is provisioned. From a terminal session, you can [query](https://steampipe.io/docs/query/overview) your AWS environment. You can run Steampipe in [service mode](https://steampipe.io/docs/managing/service) and connect to it using a Postgres-compatible database client such as [Sqlectron GUI](https://sqlectron.github.io/) or [Visual Studio Code](https://code.visualstudio.com/) (with [PostreSQL](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres) extension) which are installed in the EC2 instance. 
 
 ![using steampipe](images/ec2-steampipe.png)
 
