@@ -5,6 +5,7 @@ The tool is mentioned on [AWS Open Source blog](https://aws.amazon.com/blogs/ope
 - [Querying AWS at scale across APIs, Regions, and accounts](https://aws.amazon.com/blogs/opensource/querying-aws-at-scale-across-apis-regions-and-accounts/)
 - [Compliance auditing with Steampipe and SQL](https://aws.amazon.com/blogs/opensource/compliance-auditing-with-steampipe-and-sql/)
 - [Dashboards as code: A new approach to visualizing AWS APIs](https://aws.amazon.com/blogs/opensource/dashboards-as-code-a-new-approach-to-visualizing-aws-apis/)
+- [Using Steampipe Relationship Graphs to Navigate Cloud Resources on AWS](https://aws.amazon.com/blogs/opensource/using-the-new-relationship-graph-capabilities-in-open-source-steampipe-on-aws/)
 
 [Installing](https://steampipe.io/downloads) steampipe and [configuring](https://hub.steampipe.io/plugins/turbot/aws#get-started) AWS plugin requires effort and may raise security concerns as users must have [ReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html) IAM permission. Windows users must install Windows Subsystem for Linux (WSL 2.0) and Ubuntu.
 
@@ -18,7 +19,7 @@ Once provisioned, go to Outputs section.
 
 Open the `SSMSessionManager` link value in a new browser tab to start SSM Session Manager session. Use the command `sudo passwd ec2-user` to set login password. 
 
-Open the `WebConsole` link value to access web browser console and login as user `ec2-user` with the password that you have set. 
+Open the `DCVwebConsole` link value to access NCIE DCV web browser console and login as user `ec2-user` with the password that you have set. 
  
 
 ## Attribution
@@ -54,13 +55,9 @@ Remote web access is provided by [NICE DCV](https://aws.amazon.com/hpc/dcv/) ser
 Native clients can be downloaded from https://download.nice-dcv.com/
 
 
-## EC2 instance in private subnet
-The CloudFormation template is designed to provision EC2 instance in [public subnet](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario1.html). To provision EC2 in [private subnet](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html) with internet connectivity, edit the .yaml file and either remove or comment out the last 3 lines as shown below
-```
-#  DCVwebConsole:
-#    Description: DCV web console (login as ec2-user)
-#    Value: !Sub "https://${ec2Instance.PublicIp}:8443"
-```
+## EC2 in private subnet
+The CloudFormation templates are designed to provision EC2 instances in [public subnet](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario1.html). To use them for EC2 instances in [private subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html) with internet connectivity, set `displayPublicIP` parameter value to `No` 
+
 
 
 
